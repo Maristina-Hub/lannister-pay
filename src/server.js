@@ -13,6 +13,6 @@ app.get("/", (req, res) => {
     res.json("Welcome to Lannister Pay App.");
   });
 
-  app.use("/", feeComputationRoutes);
+app.use("/", feeComputationRoutes);
 
 export default app;
