@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const { Schema, model } = mongoose;
 
-const computedFeesSchema = new Schema({
+const computeTransactionFeeSchema = new Schema({
     unique_id: {
         type: String,
         required:[false]
@@ -40,4 +40,4 @@ const computedFeesSchema = new Schema({
     
 });
 
-export const ComputedFees = model("computedFees", computedFeesSchema);
+export const ComputeTransactionFee = model("computeTransactionFee", computeTransactionFeeSchema);

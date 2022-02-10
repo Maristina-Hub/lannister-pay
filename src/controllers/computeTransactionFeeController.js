@@ -1,9 +1,9 @@
-import { ComputedFees } from "../models/feesComputation.js";
+import { ComputeTransactionFee } from "../models/computeTransactionFee.js";
 
-export const FeesController = {
+export const ComputeTransactionFeeController = {
     
     createFees: async (req, res) => {
-    const { unique_id, currency, feeType, feeValue , type, feeLocal, feeEntity, entityProperty} = req.body;
+    const { unique_id, amount, currency, currencyCountry , type, feeLocal, feeEntity, entityProperty} = req.body;
     
 
     try {
